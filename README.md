@@ -2,7 +2,6 @@
 
 Un prototype navigable qui reproduit l'interface de Figma (workspaces → teams → dossiers → fichiers) pour **tester et discuter d'une nouvelle organisation de nos fichiers Figma**, sans toucher à Figma.
 
-Tu n'as pas besoin de savoir coder : pour modifier l'arborescence, il suffit d'éditer **un seul fichier** (`src/data.js`) avec des listes de noms.
 
 ---
 

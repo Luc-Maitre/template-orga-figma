@@ -69,6 +69,7 @@ export const COUNTS = {
     { name: '🏠 Immobilier', files: [
       sub('Discovery et Research - 🏠 Immobilier', [
         'Prototype DFD Avril 2026 - 🏠 Immobilier', 'Prototype DFD Novembre 2026 - 🏠 Immobilier',
+        'Prototype Maps - 🏠 Immobilier',
         'Persona 2026 - 🏠 Immobilier', 'Vision Produit Part 2026 - 🏠 Immobilier', 'Augmentation leads - 🏠 Immobilier',
         'Planning - 🏠 Immobilier',
       ]),

@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+.fb-page-layout { background-color: var(--color-bg, white); }
+
+.fb-flex-row { height: 100vh; display: flex; flex-direction: row; }
+
+.fb-sidebar { width: 240px; padding-top: 4px; display: flex; flex-direction: column; }
+
+.fb-sidebar > :nth-last-child(2) { opacity: 0.6; }
+
+.fb-sidebar > :nth-last-child(1) { opacity: 0.3; }
+
+.fb-page { display: flex; flex-direction: column; flex-grow: 1; border-left: 1px var(--color-border) solid; }
+
+.fb-page-content-columns { overflow: hidden; flex-grow: 1; display: flex; flex-direction: row; }
+
+.fb-page-content { flex-grow: 1; overflow: hidden; position: relative; margin-right: 32px; }
+
+.fb-page-right-column { width: 304px; margin-top: 24px; margin-right: 16px; padding-left: 32px; }
+
+.fb-fading-content { margin-left: 32px; }
+
+.fb-fading-content::after { position: absolute; bottom: 0px; height: 100%; width: 100%; content: ""; background: linear-gradient(to bottom, transparent 50%, var(--color-bg) 100%); pointer-events: none; }
+
+.fb-sidebar-account-and-notifications { padding: 8px 12px; display: flex; flex-direction: row; align-items: center; gap: 8px; }
+
+.fb-sidebar-searchbar { padding: 0px 8px; margin-top: 4px; margin-bottom: 8px; }
+
+.fb-sidebar-row { padding: 8px 16px; display: flex; flex-direction: row; align-items: center; }
+
+.fb-sidebar-row :nth-child(2) { margin-left: 12px; }
+
+.fb-divider { height: 1px; background-color: var(--color-border, rgba(0, 0, 0, 0.1)); width: 100%; margin-top: 8px; margin-bottom: 10px; }
+
+@media (max-width: 645px) {
+  .fb-sidebar { display: none; }
+}
+
+.fb-page-right-column-header { margin-bottom: 18px; }
+
+.fb-page-right-column-rows > :not(:first-child) { margin-top: 8px; }
+
+.fb-page-right-column-lower { margin-top: 35px; }
+
+.fb-page-right-column-user-list { margin-top: 22px; margin-left: 16px; display: flex; flex-direction: column; gap: 18px; }
+
+.fb-page-right-column-user { display: flex; flex-direction: row; gap: 16px; }
+
+.fb-page-right-column-user:nth-child(2) { opacity: 0.6; }
+
+.fb-page-right-column-user:nth-child(3) { opacity: 0.3; }
+
+.fb-shrink-0 { flex-shrink: 0; }
+
+.fb-circle-16 { flex-shrink: 0; background-color: var(--color-bg-secondary, #f0f0f0); height: 16px; width: 16px; border-radius: 9999px; }
+
+.fb-circle-24 { background-color: var(--color-bg-secondary, #f0f0f0); height: 24px; width: 24px; border-radius: 9999px; }
+
+.fb-rectangle-16 { background-color: var(--color-bg-secondary); height: 16px; border-radius: 3px; }
+
+.fb-rectangle-24 { background-color: var(--color-bg-secondary); height: 24px; border-radius: 3px; }
+
+.fb-rectangle-32 { background-color: var(--color-bg-secondary); height: 32px; border-radius: 8px; }
+
+.fb-rectangle-36 { background-color: var(--color-bg-secondary); height: 36px; border-radius: 3px; }
+
+.fb-width-16 { width: 16px; }
+
+.fb-width-32 { width: 32px; }
+
+.fb-width-36 { width: 36px; }
+
+.fb-width-50 { width: 50px; }
+
+.fb-width-55 { width: 55px; }
+
+.fb-width-60 { width: 60px; }
+
+.fb-width-70 { width: 70px; }
+
+.fb-width-80 { width: 80px; }
+
+.fb-width-88 { width: 88px; }
+
+.fb-width-100 { width: 100px; }
+
+.fb-width-105 { width: 105px; }
+
+.fb-width-115 { width: 115px; }
+
+.fb-width-120 { width: 120px; }
+
+.fb-width-148 { width: 148px; }
+
+.fb-width-167 { width: 167px; }
+
+.fb-width-180 { width: 180px; }
+
+.fb-width-200 { width: 200px; }
+
+.fb-width-248 { width: 248px; }
+
+.fb-width-256 { width: 256px; }
+
+.fb-width-272 { width: 272px; }
+
+.fb-width-full { width: 100%; }
+
+.fb-toolbar-48 { border-bottom: 1px var(--color-border, #e5e5e5) solid; height: 48px; display: flex; flex-shrink: 0; align-items: center; padding-left: 32px; }
+
+.fb-toolbar-64 { border-bottom: 1px var(--color-border, #e5e5e5) solid; height: 64px; margin-top: 10px; display: flex; flex-shrink: 0; align-items: center; padding-left: 32px; }
+
+.fb-toolbar-84 { border-bottom: 1px var(--color-border, #e5e5e5) solid; height: 80px; margin-top: 4px; display: flex; flex-shrink: 0; align-items: center; padding-left: 32px; }
+
+.fb-toolbar-84 :nth-child(2) { margin-left: 12px; }
+
+.fb-breadcrumb { height: 48px; display: flex; flex-shrink: 0; align-items: center; padding-left: 32px; }
+
+.fb-header { height: 64px; display: flex; flex-shrink: 0; flex-direction: row; align-items: center; padding-left: 32px; }
+
+.fb-header :nth-child(2) { margin-left: 12px; }
+
+.fb-viewbar { padding-left: 32px; height: 64px; align-items: center; display: flex; flex-direction: row; justify-content: space-between; }
+
+.fb-tile-grid { display: grid; gap: 32px; justify-items: stretch; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); }
+
+.fb-tile-grid-top-padding { margin-top: 24px; }
+
+.fb-file-tile-DEPRECATED { display: flex; flex-direction: column; }
+
+.fb-file-tile-DEPRECATED .fb-rectangle-16 { margin-top: 20px; margin-bottom: 20px; }
+
+.fb-file-thumbnail { background-color: var(--color-bg-secondary); aspect-ratio: 16 / 9; }
+
+.fb-border-radius-8 { border-radius: 8px; }
+
+.fb-card { border: 1px solid var(--color-border); border-radius: 13px; overflow: hidden; display: flex; flex-direction: column; }
+
+.fb-file-card-footer { border-top: 1px solid var(--color-border); padding: 12px 16px; display: flex; flex-direction: row; align-items: center; gap: 12px; }
+
+.fb-file-card-footer-text-container { display: flex; flex-direction: column; gap: 2px; }
+
+.fb-project-tile { border: 1px solid var(--color-border); border-radius: 16px; display: flex; flex-direction: column; padding: 24px; }
+
+.fb-project-tile > :nth-child(2) { margin-top: 16px; }
+
+.fb-project-tile > :nth-child(3) { margin-top: 8px; }
+
+.fb-project-tile-folder-previews { border-radius: 13px; gap: 12px; padding: 16px; }
+
+.fb-project-tile-folder-previews > :nth-child(2) { margin-top: 0px; }
+
+.fb-project-tile-details { display: flex; align-items: center; gap: 8px; }
+
+.fb-project-tile-icon { flex-shrink: 0; width: 24px; }
+
+.fb-project-tile-details-text { display: flex; flex-direction: column; gap: 2px; }
+
+.fb-team-tile { border: 1px solid var(--color-border); border-radius: 16px; display: flex; flex-direction: column; padding: 24px; }
+
+.fb-team-tile > :nth-child(2) { margin-top: 48px; }
+
+.fb-team-tile > :nth-child(3), .fb-team-tile > :nth-child(4) { margin-top: 8px; }
+
+.fb-project-preview-grid { display: grid; gap: 12px; justify-items: stretch; grid-template-columns: 1fr 1fr; }
+
+.fb-project-tile-folder-previews .fb-project-preview-grid { gap: 10px; grid-template-columns: repeat(3, minmax(0px, 1fr)); grid-template-rows: 64px; }
+
+.fb-project-tile-folder-previews .fb-file-thumbnail { aspect-ratio: auto; }
+
+@media (max-width: 645px) {
+  .fb-tile-grid { grid-template-columns: 100%; }
+}
+
+.fb-profile-grid-header { margin-top: 24px; margin-bottom: 8px; }
